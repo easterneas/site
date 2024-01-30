@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "excerpt": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "postContent": {
+      "type": "richtext"
+    },
+    "created": {
+      "required": false,
+      "type": "datetime"
+    },
+    "updated": {
+      "type": "datetime"
+    },
+    "published": {
+      "type": "datetime"
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "posts"
+    }
+  }
+}
