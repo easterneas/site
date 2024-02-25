@@ -112,3 +112,13 @@ exports
 dist
 build
 .strapi-updater.json
+
+############################
+# Strapi Runtime (added as of 4.17.0)
+############################
+.strapi
+
+############################
+# Strapi-generated files/folders
+############################
+**/documentation/*/*.json
