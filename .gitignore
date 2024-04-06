@@ -117,6 +117,7 @@ build
 # Strapi Runtime (added as of 4.17.0)
 ############################
 .strapi
+.strapi*
 
 ############################
 # Strapi-generated files/folders
