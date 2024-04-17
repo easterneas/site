@@ -1,11 +1,10 @@
 name: Debug Test
 on: 
-  push:
-    tags: ['*.*.*']
+  release:
+    types: [prereleased]
 
 jobs:
   build:
-    if: github.event.release.prerelease
     runs-on: self-hosted
     defaults:
       run:
