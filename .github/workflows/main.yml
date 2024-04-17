@@ -10,9 +10,11 @@ jobs:
     defaults:
       run:
         shell: bash
+    env:
+      budi: ${{github.run_id}}
     steps:
     - name: Output Run ID
-      run: echo ${{ github.run_id }}
+      run: echo $budi
     - name: Output Run Number
       run: echo ${{ github.run_number }}
     - name: Output Run Attempt
