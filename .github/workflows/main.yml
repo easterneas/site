@@ -1,8 +1,7 @@
 name: Debug Test
 on: 
   push:
-    branches: 
-      - '*'
+    tags: ['*.*.*-*-*']
 
 jobs:
   build:
@@ -11,7 +10,7 @@ jobs:
       run:
         shell: bash
     env:
-      budi: ${{github.event.release.tag_name}}
+      budi: ${{github.ref_name}}
     steps:
     - name: Output Run ID
       run: echo $budi
