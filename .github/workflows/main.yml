@@ -11,7 +11,7 @@ jobs:
       run:
         shell: bash
     env:
-      budi: ${{github.run_id}}
+      budi: ${{github.ref_name}}
     steps:
     - name: Output Run ID
       run: echo $budi
