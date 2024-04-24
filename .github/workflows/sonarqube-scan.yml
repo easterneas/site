@@ -14,7 +14,9 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - uses: sonarsource/sonarqube-scan-action@master
+      - name: check docker context
+        run: docker context inspect
+      - uses: easterneas/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_STAGING_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_STAGING_HOST_URL }}
