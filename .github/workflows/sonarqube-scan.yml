@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: check docker context
-        run: docker context inspect
+        run: /usr/bin/docker context inspect
       - uses: easterneas/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_STAGING_TOKEN }}
