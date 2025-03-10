@@ -16,17 +16,16 @@
     "typescript": "5.2.2"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "4.20.2",
-    "@strapi/plugin-color-picker": "4.20.2",
-    "@strapi/plugin-documentation": "4.20.2",
-    "@strapi/plugin-i18n": "4.20.2",
-    "@strapi/plugin-users-permissions": "4.20.2",
-    "@strapi/strapi": "4.20.2",
+    "@strapi/plugin-cloud": "5.11.0",
+    "@strapi/plugin-color-picker": "5.11.0",
+    "@strapi/plugin-documentation": "5.11.0",
+    "@strapi/plugin-users-permissions": "5.11.0",
+    "@strapi/strapi": "5.11.0",
     "pg": "8.8.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "5.3.4",
-    "styled-components": "5.3.3"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
   },
   "author": {
     "name": "A Strapi developer"
@@ -38,5 +37,6 @@
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
