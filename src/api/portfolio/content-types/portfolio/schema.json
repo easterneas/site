@@ -27,7 +27,7 @@
         "other"
       ]
     },
-    "status": {
+    "projectStatus": {
       "type": "enumeration",
       "enum": [
         "running",
@@ -39,9 +39,9 @@
     "url": {
       "type": "uid"
     },
-    "avatar": {
+    "cover": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
