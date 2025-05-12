@@ -24,6 +24,12 @@
       "relation": "manyToMany",
       "target": "api::post.post",
       "mappedBy": "tags"
+    },
+    "icon": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::icon.icon",
+      "inversedBy": "tags"
     }
   }
 }
