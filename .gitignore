@@ -111,7 +111,9 @@ exports
 *.cache
 dist
 build
+.strapi/
 .strapi-updater.json
+types/
 
 ############################
 # Strapi Runtime (added as of 4.17.0)
